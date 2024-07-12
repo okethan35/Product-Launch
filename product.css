@@ -78,6 +78,25 @@ nav img {
 .header{
     width: 80%;
     margin: 70px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+    animation-duration: 0.75s;
+    animation-name: animate-fade;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+}
+@keyframes animate-fade{
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 .container{
     display:grid;
@@ -87,8 +106,12 @@ nav img {
 .container img{
     width: 100%;
 }
+.container div{
+    padding-left: 20px;
+    height:100%;
+}
 .container div h3{
-    font-size: 70px;
+    font-size: 80px;
 }
 .container div a{
     padding:15px;
@@ -98,4 +121,17 @@ nav img {
     border-radius: 10px;
     color: #fff;
     font-size: 20px;
+    position:relative;
+    left: 50%;
+    bottom: 0%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.container div a:hover{
+    background-color:#80612c;
+}
+.container p{
+    padding: 30px 0px;
+    font-size: 30px;
 }
