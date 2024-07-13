@@ -26,9 +26,6 @@ body {
     padding: 0;
     font-family: 'Brush Script MT', cursive;
 }
-a{
-    text-decoration: none;
-}
 
 /*--Nav Bar--*/
 nav {
@@ -55,6 +52,7 @@ nav img {
 }
 .nav-links ul li a {
     color: #4f3814;
+    text-decoration: none;
     font-size: 32px;
     font-weight:600;
 }

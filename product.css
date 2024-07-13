@@ -105,13 +105,17 @@ nav img {
 
 .container img{
     width: 100%;
+    background:#fffae2;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
 }
 .container div{
     padding-left: 20px;
     height:100%;
+    position: relative;
 }
 .container div h3{
-    font-size: 80px;
+    font-size: 5vw;
 }
 .container div a{
     padding:15px;
@@ -120,18 +124,44 @@ nav img {
     display: inline-block;
     border-radius: 10px;
     color: #fff;
-    font-size: 20px;
-    position:relative;
+    font-size: 2vw;
+    position:absolute;
     left: 50%;
-    bottom: 0%;
+    bottom: 0;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    transition: 0.5s;
+    transition: background-color ease 0.5s;
 }
 .container div a:hover{
     background-color:#80612c;
 }
 .container p{
     padding: 30px 0px;
-    font-size: 30px;
+    font-size: 3vw;
+}
+@media screen and (max-width: 800px) {
+    .container div, .container img {
+        width:100%;
+    }
+}
+
+.nutrition{
+    width: 80%;
+    margin: 70px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+    animation-duration: 0.75s;
+    animation-name: animate-fade;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+}
+.nutrition h3{
+    font-size: 4vw;
+}
+.nutrition div{
+    padding-left: 20px;
+    padding-right: 20px;
 }
