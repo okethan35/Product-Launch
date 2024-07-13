@@ -165,3 +165,17 @@ nav img {
     padding-left: 20px;
     padding-right: 20px;
 }
+.label{
+    display:inline-flex;
+    padding-top: 2vh;
+}
+.label img{
+    width: 100%;
+    max-width: 40%;
+}
+.ingredients h4{
+    font-size:3vw;
+}
+.ingredients p{
+    font-size:2vw;
+}
